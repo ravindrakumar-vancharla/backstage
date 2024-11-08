@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: sample-service
+  description: A sample service for testing GitHub integration with Backstage
+  annotations:
+    github.com/project-slug: your-organization/sample-service
+    github.com/ci-workflows: |
+      - sample-ci.yaml
+spec:
+  type: service
+  lifecycle: experimental
+  owner: your-team
+
